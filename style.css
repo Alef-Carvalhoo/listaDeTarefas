@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    padding-top: 110px;
+    background-color: #b3b0b0;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-lista {
+    margin: 15px auto;
+    padding: 18px;
+    width: 550px;
+    height: 636px;
+    border-radius: 30px;
+    background: #e2bc6e;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+}
+
+.card-lista h1 {
+    font-family: 'Bungee', cursive;
+    font-size: 27px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-lista li {
+    margin-left: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid;
+}
+
+.card-lista li p {
+    text-indent: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+
+form {
+    margin-top: 40px;
+    margin-left: 395px;
+}
+
+form h2 {
+    font-size: 25px;
+    margin-left: -20px;
+    margin-bottom: 2px;
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+form input {
+    margin-left: -57px;
+    width: 239px;
+    height: 35px;
+    border-radius: 18px;
+    text-align: center;
+    
+}
+
+button {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 64px;
+    height: 32px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #4CC737;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#btn-remover {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    width: 75px;
+    height: 25px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #dd1313;
+    border-radius: 10px;
+    
+    cursor: pointer;
+}
+
+#btn-concluir {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    width: 75px;
+    height: 25px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #4CC737;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista De Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card-lista">
+            <h1>Lista De Tarefas</h1>
+            <table id="tabela">
+                <tbody>
+                    <ol>
+                        <li>
+                            <p>lavar a louça <button id="btn-concluir">Feito</button><button id="btn-remover">remover</button></p>
+                        </li>
+                    </ol>
+                </tbody>
+            </table>
+        </div>
+        <form id="form-lista">
+            <h2>Nova Tarefa:</h2>
+            <input type="text" id="nome-tarefa" placeholder="Digite Uma Nova Tarefa" required />
+            <button type="submit">+</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
