@@ -5,25 +5,22 @@ $(document).ready(function(){
 
         const novaTarefa = $('#nome-tarefa').val();
         const novaLinha = $('<li></li>');
+
+        const tarefaElement = $(`<p>${novaTarefa}<button id="btn-concluir">Feito</button><button id="btn-remover">remover</button></p>`);
         
-
-        $(`<p>${novaTarefa}<button id="btn-concluir">Feito</button><button id="btn-remover">remover</button></p>`).appendTo(novaLinha);
-
-        $(novaLinha).appendTo('ol');
+        tarefaElement.appendTo(novaLinha);
+        novaLinha.appendTo('#listaTarefas');
         $('#nome-tarefa').val('');
 
+    
     });
 
-        $('#btn-concluir').click(function() {
-        $('p').css({"text-decoration": "line-through"});
-
+        $('#listaTarefas').on('click', '#btn-concluir', function() {
+            $(this).parent().css({"text-decoration": "line-through"});
         });
 
-        $('#btn-remover').click(function () {
-        $('p').remove();
-        $('li').remove();
-
-        })
-        
+        $('#listaTarefas').on('click', '#btn-remover', function() {
+            $(this).parent().parent().remove();
+        });
         
 });

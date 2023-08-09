@@ -114,3 +114,15 @@ button {
     border-radius: 10px;
     cursor: pointer;
 }
+
+#listaTarefas {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+
